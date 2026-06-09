@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="administrador.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Barra Lateral de Navegação -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Painel ADM</h3>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="#" class="active">Início</a>
+                <a href="#cadastro" id="btnMenuCadastro">Cadastrar Projeto</a>
+                <a href="#" class="logout-link">Sair</a>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo Principal Dinâmico -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Bem-vinda, Giselly</h1>
+                <p>Gerencie seus projetos e ordens de serviço.</p>
+            </header>
+
+            <!-- Área do Formulário de Cadastro (Invisível por padrão, aparece ao clicar) -->
+            <section class="content-section" id="cadastroSection">
+                <div class="form-container">
+                    <h2>Cadastrar Novo Projeto</h2>
+                    <form id="cadastroProjetoForm">
+                        <div class="input-group">
+                            <label for="nomeProjeto">Nome do Projeto</label>
+                            <input type="text" id="nomeProjeto" required placeholder="Ex: Estrutura Metálica Galpão X">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="descricaoProjeto">Descrição</label>
+                            <textarea id="descricaoProjeto" rows="4" required placeholder="Detalhes técnicos do projeto..."></textarea>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="prazoProjeto">Prazo de Entrega</label>
+                            <input type="date" id="prazoProjeto" required>
+                        </div>
+
+                        <button type="submit" class="btn-salvar">Salvar Projeto</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

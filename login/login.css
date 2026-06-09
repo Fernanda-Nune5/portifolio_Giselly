@@ -1,0 +1,86 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #b7b7b7;
+    background-image: url("PNG - Logo vertical sem Slogan - Usar em fundo .png");
+    background-size: 600px auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Caixa Branca do Formulário */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px; /* Cantos um pouco mais arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra mais suave */
+    width: 100%;
+    max-width: 420px; /* Largura perfeita para telas de login */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #222222;
+    font-size: 24px;
+}
+
+/* Campos de Entrada */
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px; /* Aumentou o espaço interno das caixas */
+    border: 1px solid #dcdcdc;
+    border-radius: 6px; /* Borda levemente arredondada */
+    font-size: 16px;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #fafafa;
+}
+
+/* Efeito azul ao clicar na caixa de texto */
+.input-group input:focus {
+    border-color: #b7b7b7;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(152, 8, 8, 0.15);
+}
+
+/* Botão de Entrar Centralizado */
+button {
+    width: 100%; /* Ocupa exatamente a mesma largura das caixas */
+    padding: 14px; /* Mesma altura interna das caixas para alinhar */
+    background-color: #b00909;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #cf4040;
+}
