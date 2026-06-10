@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Projeto</title>
+    <link rel="stylesheet" href="administrador.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Painel</h3>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio.html" id="inicio">Início</a>
+                <a href="projetos.html" id="viewProjetos">Projetos</a>
+                <a href="cadProjetos.html" id="cadProjetos" class="active">Cadastrar Projeto</a>
+                <a href="conf.html" id="conf">Configurações</a>
+                <a href="../login/login.html" class="logout-link">Sair</a>
+            </nav>
+        </aside>
+
+        <main class="main-container">
+
+            <div class="page-header">
+                <h1>Cadastrar Projeto</h1>
+                <p>Adicione um novo projeto ao portfólio.</p>
+            </div>
+
+            <section class="section-container">
+
+                <div class="card">
+
+                    <h2>Novo Projeto</h2>
+
+                    <form id="formProjeto">
+
+                        <div class="input-group">
+                            <label for="nomeProjeto">Nome do Projeto</label>
+                            <input type="text" id="nomeProjeto" placeholder="Digite o nome do projeto" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="descricaoCompleta">
+                                Descreva seu projeto
+                            </label>
+
+                            <textarea id="descricaoCompleta" placeholder="Descreva seu projeto detalhadamente..."
+                                required>
+                            </textarea>
+                        </div>
+
+                        <div class="input-group">
+
+                            <label>Anexar arquivos</label>
+
+                            <label for="arquivoProjeto" class="drop-file-area">
+
+                                <span class="upload-icon">📁</span>
+
+                                <span>Clique para selecionar arquivos</span>
+
+                                <span class="file-info">
+                                    Imagens, vídeos e PDFs
+                                </span>
+
+                            </label>
+
+                            <input type="file" id="arquivoProjeto" multiple accept="image/*,video/*,.pdf" hidden>
+
+                        </div>
+
+                        <button type="submit" class="btn-salvar">
+                            Salvar Projeto
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>

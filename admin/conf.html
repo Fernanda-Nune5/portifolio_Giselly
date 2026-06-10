@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Projeto</title>
+    <link rel="stylesheet" href="administrador.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Painel</h3>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio.html" id="inicio">Início</a>
+                <a href="projetos.html" id="viewProjetos">Projetos</a>
+                <a href="cadProjetos.html" id="cadProjetos">Cadastrar Projeto</a>
+                <a href="conf.html" id="conf" class="active">Configurações</a>
+                <a href="../login/login.html" class="logout-link">Sair</a>
+            </nav>
+        </aside>
+
+        <main class="main-container">
+
+            <div class="page-header">
+                <h1>Configurações</h1>
+                <p>Gerencie a sua conta e preferências.</p>
+            </div>
+
+            <section class="config-section">
+
+                <div class="card">
+                    <h2>Informações da Conta</h2>
+
+                    <div class="input-group">
+                        <label for="usuario">Usuário</label>
+                        <input type="email" placeholer="Digite seu usuário.">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Digite seu email.">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" placeholder="(00) 0000-0000">
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Segurança</h2>
+
+                    <div class="input-group">
+                        <label for="senhaAtual">Senha atual</label>
+                        <input type="password" id="senhaAtual">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="novaSenha">Nova senha</label>
+                        <input type="password" id="novaSenha">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirmarSenha">Confirmar nova senha</label>
+                        <input type="password" id="confirmarSenha">
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Aparência</h2>
+
+                    <div class="theme-options">
+
+                        <label class="theme-card">
+                            <input type="radio" name="tema" checked>
+                            <span>Tema Claro</span>
+                        </label>
+
+                        <label class="theme-card">
+                            <input type="radio" name="tema">
+                            <span>Tema Escuro</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <button class="btn-salvar">Salvar alterações</button>
+
+            </section>
+
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>

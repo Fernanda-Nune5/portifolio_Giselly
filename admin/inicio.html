@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="administrador.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Painel</h3>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio.html" id="inicio" class="active">Início</a>
+                <a href="projetos.html" id="viewProjetos">Projetos</a>
+                <a href="cadProjetos.html" id="cadProjetos">Cadastrar Projeto</a>
+                <a href="conf.html" id="conf">Configurações</a>
+                <a href="../login/login.html" class="logout-link">Sair</a>
+            </nav>
+        </aside>
+
+        <main class="main-container">
+
+            <div class="page-container">
+                <h1>Bem-vinda ao Painel Administrativo</h1>
+                <p>Gerencie as informações que apareceram no seu portifólio.</p>
+            </div>
+
+            <section class="profile-section">
+
+                <div class="card">
+
+                    <h2>Foto de perfil</h2>
+
+                    <div class="input-group">
+
+                        <label for="fotoPerfil" class="drop-file-area">
+
+                            <span class="uploud-icon">📷</span>
+                            <span>Clique para selecionar uma foto</span>
+                            <span class="file-into">PNG OU JPG</span>
+
+                        </label>
+
+                        <input type="file" id="fotoPerfil" accept="imagem/*" hidden>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+
+                    <h2>Informações Principais</h2>
+
+                    <div class="input-group">
+                        <label for="nomeCompleto">Nome</label>
+                        <input type="text" id="nomeCompleto" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="formacao">Formação</label>
+                        <textarea id="formacao" placeholder="Ex: Especialista em Estruturas Metálicas..."></textarea>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Sobre Mim</h2>
+
+                    <div class="input-group">
+
+                        <textarea id="sobreMim"
+                            placeholder="Escreva aqui uma apresentação para os visitantes do seu portifólio."></textarea>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Contato</h2>
+
+                    <div class="contact-grid">
+
+                        <div class="input-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" placeholder="(XX) XXXXX-XXXX">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="exemplo@dominio.com">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="linkedin">Endereço</label>
+                            <input type="text" id="endereco" placeholder="Digite seu endereço">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>Redes Sociais</h2>
+
+                    <div class="social-grid">
+
+                        <div class="input-group">
+                            <label for="instagram">Instagram</label>
+                            <input type="url" id="instagram" placeholder="Link do instagram">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="whatsApp">WhatsApp</label>
+                            <input type="url" id="whatsApp" placeholder="Link do WhatsApp">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="linkedin">LinkedIn</label>
+                            <input type="url" id="linkedin" placeholder="Link do LinkedIn">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <button class="btn-salvar">Salvar</button>
+                </div>
+            </section>
+
+        </main>
+
+
+</body>
+
+</html>
